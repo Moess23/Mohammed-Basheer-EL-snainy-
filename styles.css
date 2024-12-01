@@ -1,0 +1,39 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    const revealSections = () => {
+        sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight - 100) {
+                section.classList.add("visible");
+            }
+        });
+    };
+
+    // كشف الأقسام عند التحميل والتمرير
+    window.addEventListener("scroll", revealSections);
+    revealSections();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    const revealSections = () => {
+        sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight - 100) {
+                section.classList.add("visible");
+            }
+        });
+    };
+
+    // كشف الأقسام عند التحميل والتمرير
+    window.addEventListener("scroll", revealSections);
+    revealSections();
+});
+
+ 
